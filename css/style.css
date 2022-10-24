@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --color-cyan: hsl(179, 62%, 43%);
+    --color-yellow: hsl(71, 73%, 54%);
+    --color-lightGray: hsl(204, 43%, 93%);
+    --color-grayBlue: hsl(218, 22%, 67%);
+}
+
+html {
+    font-size: 100%;
+}
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: var(--color-lightGray);
+    
+}
+main {
+    display: grid;
+    width: 100%;
+    min-height: 96vh;
+    place-items: center;
+}
+.container {
+    width: 33rem;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.top {
+    padding: 2rem;
+    background-color: #fff;
+    width: 100%;
+    font-weight: 700;
+}
+.top h1 {
+    font-size: 1.5rem;
+    color: var(--color-cyan);
+    margin-bottom: 1rem;
+}
+.top h2{
+    font-size: 1rem;
+    color: var(--color-yellow);
+    margin-bottom: 1rem;
+}
+.top p {
+    font-size: .8rem;
+    color: var(--color-grayBlue);
+}
+.bottom {
+    width: 100%;
+    display: flex;
+    color: #fff;
+}
+.left {
+    padding: 2rem;
+    width: 50%;
+    background-color: var(--color-cyan);
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+} 
+
+.left h3 {
+    font-size: .9rem;
+    margin-bottom: .8rem;
+}
+.left h2 {
+    display: flex;
+    font-size: 1.7rem;
+    align-items: center;
+    margin-bottom: -.6rem;
+}
+.left h2 span {
+    color: var(--color-lightGray);
+    font-size: .8rem;
+    font-weight: 400;
+    margin-left: .5rem;
+}
+.left p {
+    font-size: .8rem;
+    margin-bottom: 1rem;
+}
+
+.left a {
+    text-decoration: none;
+    color: #fff;
+    padding: .7rem 2.2rem;
+    text-align: center;
+    background-color: var(--color-yellow);
+    width: 100%;
+    display: inline-block;
+    border-radius: 4px;
+    font-size: .8rem;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.3);
+}
+
+.right {
+    width: 50%;
+    padding: 2rem;
+    background-color:hsl(179, 42%, 55%);
+
+}
+.right h2 {
+    font-size: .9rem;
+    margin-bottom: 1rem;
+}
+.right ul {
+    font-size: .7rem;
+    line-height: 1.1rem;
+    width: 77%;
+    list-style: none;
+
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+        margin: 3rem 0;
+    }
+    .bottom {
+        flex-direction: column;
+    }
+    .left {
+        width: 100%;
+    }
+    .right {
+        width: 100%;
+    }
+}
